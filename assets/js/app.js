@@ -33,6 +33,3 @@
 }());
 
 
-function handleSubmit(e) {
-
-}
