@@ -1,0 +1,22 @@
+{
+  "name": "41200-final-project",
+  "version": "1.0.0",
+  "description": "MTG group project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iStuttered/41200-final-project.git"
+  },
+  "author": "Andrew R, Andrew M, Michael, Nathaniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iStuttered/41200-final-project/issues"
+  },
+  "homepage": "https://github.com/iStuttered/41200-final-project#readme",
+  "dependencies": {
+    "firebase": "^5.11.0"
+  }
+}
