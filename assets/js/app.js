@@ -2,6 +2,7 @@
 
 // get elements
 
+
     const white = document.getElementById('color-white');
     const black = document.getElementById('color-black');
     const red = document.getElementById('color-red');
@@ -29,6 +30,18 @@
     white.addEventListener('change', e=>{
         console.log(e);
     })
+  
+    const mana1 = document.getElementById('mana1');
+    const mana2 = document.getElementById('mana2');
+    const mana3 = document.getElementById('mana3');
+    const mana4 = document.getElementById('mana4');
+    const mana5 = document.getElementById('mana5');
+    const mana6 = document.getElementById('mana6');
+    const mana7 = document.getElementById('mana7');
+    const mana8 = document.getElementById('mana8');
+    const mana9 = document.getElementById('mana9');
+    const mana10 = document.getElementById('mana10');
+
 
     const btnSubmit = document.getElementById('btnSubmit');
 
