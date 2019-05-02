@@ -26,55 +26,62 @@
       <form style="padding: 42px;">
         <h2>Magic: The Gathering Deck Builder</h2>
         <div class="form-group">
-          <!-- Start: Bootstrap 4's Custom Radios & Checkboxes -->
+          <!-- Start: Bootstrap 4's Custom Radios & checkboxes -->
           <div><input class="form-control" type="search" placeholder="Search here...">
             <fieldset style="margin-top: 20px;margin-bottom: 20px;">
               <legend>Colors</legend>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="color-white" class="custom-control-input"><label class="custom-control-label" for="color-white">White</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="color-black" class="custom-control-input"><label class="custom-control-label" for="color-black">Black</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="color-red" class="custom-control-input"><label class="custom-control-label" for="color-red">Red</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="color-green" class="custom-control-input"><label class="custom-control-label" for="color-green">Green</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="color-blue" class="custom-control-input"><label class="custom-control-label" for="color-blue">Blue</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="colors" id="color-white" class="custom-control-input"><label class="custom-control-label" for="color-white">White</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="colors" id="color-black" class="custom-control-input"><label class="custom-control-label" for="color-black">Black</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="colors" id="color-red" class="custom-control-input"><label class="custom-control-label" for="color-red">Red</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="colors" id="color-green" class="custom-control-input"><label class="custom-control-label" for="color-green">Green</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="colors" id="color-blue" class="custom-control-input"><label class="custom-control-label" for="color-blue">Blue</label></div>
             </fieldset>
           </div>
-          <!-- End: Bootstrap 4's Custom Radios & Checkboxes -->
+          <!-- End: Bootstrap 4's Custom Radios & checkboxes -->
           <fieldset>
             <legend>Type</legend>
-            <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="Instant" class="custom-control-input"><label class="custom-control-label" for="Instant">Instant</label></div>
-            <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="Sorcery" class="custom-control-input"><label class="custom-control-label" for="Sorcery">Sorcery</label></div>
-            <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="Enchantment" class="custom-control-input"><label class="custom-control-label" for="Enchantment">Enchantment</label></div>
-            <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="Creature" class="custom-control-input"><label class="custom-control-label" for="Creature">Creature</label></div>
-            <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="Artifact" class="custom-control-input"><label class="custom-control-label" for="Artifact">Artifact</label></div>
-            <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="Planeswalker" class="custom-control-input"><label class="custom-control-label" for="Planeswalker">Planeswalker</label></div>
+            <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="type" id="Instant" class="custom-control-input"><label class="custom-control-label" for="Instant">Instant</label></div>
+            <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="type" id="Sorcery" class="custom-control-input"><label class="custom-control-label" for="Sorcery">Sorcery</label></div>
+            <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="type" id="Enchantment" class="custom-control-input"><label class="custom-control-label" for="Enchantment">Enchantment</label></div>
+            <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="type" id="Creature" class="custom-control-input"><label class="custom-control-label" for="Creature">Creature</label></div>
+            <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="type" id="Artifact" class="custom-control-input"><label class="custom-control-label" for="Artifact">Artifact</label></div>
+            <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="type" id="Planeswalker" class="custom-control-input"><label class="custom-control-label" for="Planeswalker">Planeswalker</label></div>
           </fieldset>
-          <!-- Start: Bootstrap 4's Custom Radios & Checkboxes -->
+          <!-- Start: Bootstrap 4's Custom Radios & checkboxes -->
           <div>
             <fieldset style="margin-top: 20px;margin-bottom: 20px;">
               <legend>Mana Cost</legend>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-1" class="custom-control-input"><label class="custom-control-label" for="mana-1">1</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-2" class="custom-control-input"><label class="custom-control-label" for="mana-2">2</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-3" class="custom-control-input"><label class="custom-control-label" for="mana-3">3</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-4" class="custom-control-input"><label class="custom-control-label" for="mana-4">4</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-5" class="custom-control-input"><label class="custom-control-label" for="mana-5">5</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-6" class="custom-control-input"><label class="custom-control-label" for="mana-6">6</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-7" class="custom-control-input"><label class="custom-control-label" for="mana-7">7</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-8" class="custom-control-input"><label class="custom-control-label" for="mana-8">8</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-9" class="custom-control-input"><label class="custom-control-label" for="mana-9">9</label></div>
-              <div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" id="mana-10" class="custom-control-input"><label class="custom-control-label" for="mana-10">10</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-1" class="custom-control-input"><label class="custom-control-label" for="mana-1">1</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-2" class="custom-control-input"><label class="custom-control-label" for="mana-2">2</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-3" class="custom-control-input"><label class="custom-control-label" for="mana-3">3</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-4" class="custom-control-input"><label class="custom-control-label" for="mana-4">4</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-5" class="custom-control-input"><label class="custom-control-label" for="mana-5">5</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-6" class="custom-control-input"><label class="custom-control-label" for="mana-6">6</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-7" class="custom-control-input"><label class="custom-control-label" for="mana-7">7</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-8" class="custom-control-input"><label class="custom-control-label" for="mana-8">8</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-9" class="custom-control-input"><label class="custom-control-label" for="mana-9">9</label></div>
+              <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="mana" id="mana-10" class="custom-control-input"><label class="custom-control-label" for="mana-10">10</label></div>
             </fieldset>
           </div>
-          <!-- End: Bootstrap 4's Custom Radios & Checkboxes -->
-          <!-- Start: Bootstrap 4's Custom Radios & Checkboxes -->
+          <!-- End: Bootstrap 4's Custom Radios & checkboxes -->
+          <!-- Start: Bootstrap 4's Custom Radios & checkboxes -->
           <div style="margin-top: 20px;margin-bottom: 20px;"></div>
-          <!-- End: Bootstrap 4's Custom Radios & Checkboxes -->
-          <!-- Start: Bootstrap 4's Custom Radios & Checkboxes -->
+          <!-- End: Bootstrap 4's Custom Radios & checkboxes -->
+          <!-- Start: Bootstrap 4's Custom Radios & checkboxes -->
           <div></div>
-          <!-- End: Bootstrap 4's Custom Radios & Checkboxes -->
+          <!-- End: Bootstrap 4's Custom Radios & checkboxes -->
         </div>
       </form>
 
 
       <button id = "btnSubmit">Search Card</button>
+
+      <iframe
+              allow="microphone;"
+              width="350"
+              height="430"
+              src="https://console.dialogflow.com/api-client/demo/embedded/7912096e-6fac-4a23-9b57-4215abdbaf8e">
+      </iframe>
 
 
 
@@ -118,4 +125,3 @@
 </body>
 
 </html>
-
