@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>41200-final-project</title>
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=8acf7cb4e953bd6d1768e62a12f0ba23">
   <link rel="stylesheet" href="assets/css/styles.min.css?h=d2840dd33088575a87d2097765455fed">
 </head>
@@ -25,10 +25,17 @@
     <div class="intro">
       <form style="padding: 42px;">
         <h2>Magic: The Gathering Deck Builder</h2>
+        <div class="w3-card-2" style="margin:20px">
+          <label style="padding: 10px;">Card Name:</label>
+          <h4 style="padding: 10px;" id="result-title"></h4>
+          <label style="padding: 10px;">Details:</label>
+          <p id="result-detail" style="padding: 10px;"></p>
+        </div>
         <div class="form-group">
           <!-- Start: Bootstrap 4's Custom Radios & checkboxes -->
-          <div><input class="form-control" type="search" placeholder="Search here...">
-            <fieldset style="margin-top: 20px;margin-bottom: 20px;">
+          <div><input class="form-control" id="search" type="search" placeholder="Search here...">
+            <button id="btnSubmit">Search Card</button>
+            <fieldset>
               <legend>Colors</legend>
               <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="colors" id="color-white" class="custom-control-input color" value="W"><label class="custom-control-label" for="color-white">White</label></div>
               <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="colors" id="color-black" class="custom-control-input color" value="B"><label class="custom-control-label" for="color-black">Black</label></div>
@@ -72,10 +79,6 @@
           <!-- End: Bootstrap 4's Custom Radios & checkboxes -->
         </div>
       </form>
-
-
-      <button id = "btnSubmit">Search Card</button>
-
       <iframe
               allow="microphone;"
               width="350"
