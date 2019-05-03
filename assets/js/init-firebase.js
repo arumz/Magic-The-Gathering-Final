@@ -4,7 +4,8 @@ const firebaseConfig = {
     databaseURL: "https://magic-gathering-app.firebaseio.com",
     projectId: "magic-gathering-app",
     storageBucket: "magic-gathering-app.appspot.com",
-    messagingSenderId: "279517636077"};
+    messagingSenderId: "279517636077"
+};
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -44,8 +45,7 @@ var typeFilters = [];
 var colorFilters = [];
 
 
-
-$('.mana').click(function(){
+$('.mana').click(function () {
 
     var selected = $(".mana:checked");
     if (selected) {
@@ -58,7 +58,7 @@ $('.mana').click(function(){
     // return cost;
 });
 
-$('.type').click(function(){
+$('.type').click(function () {
 
     var selected = $(".type:checked");
     if (selected) {
@@ -70,7 +70,7 @@ $('.type').click(function(){
 
 });
 
-$('.color').click(function(){
+$('.color').click(function () {
 
     var selected = $(".color:checked");
     if (selected) {
@@ -81,12 +81,6 @@ $('.color').click(function(){
     // console.log(selected.val());
 
 });
-
-
-
-
-
-
 
 
 const btnSubmit = document.getElementById('btnSubmit');
@@ -101,18 +95,15 @@ const btnSubmit = document.getElementById('btnSubmit');
 //mana
 
 
-
 // add authentication feature on submit
 
 btnSubmit.addEventListener('click', e => {
     const auth = firebase.auth();
 
-
     // Start a sign in process for an unauthenticated user.
     var provider = new firebase.auth.GoogleAuthProvider();
     provider.addScope('profile');
     provider.addScope('email');
-
 
 
     const promise = auth.signInWithPopup(provider).then(result => {
@@ -121,7 +112,7 @@ btnSubmit.addEventListener('click', e => {
         // The signed-in user info.
         var user = result.user;
 
-        if (user){
+        if (user) {
 
             var mana = manaFilters[0];
             var color = colorFilters[0];
@@ -130,8 +121,6 @@ btnSubmit.addEventListener('click', e => {
             console.log(manaFilters[0]);
             console.log(colorFilters[0]);
             console.log(typeFilters[0]);
-
-
 
 
         }
@@ -157,9 +146,6 @@ btnSubmit.addEventListener('click', e => {
                         return doc.data();
                     })
                 });
-
-
-                console.log(doc.data()["name"]);
 
                 return doc.data();
             })
@@ -189,7 +175,6 @@ btnSubmit.addEventListener('click', e => {
 
 
     })
-
 
 
 });
