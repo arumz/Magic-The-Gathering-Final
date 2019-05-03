@@ -1,7 +1,5 @@
 (function() {
-
-// get elements
-
+    // get elements
 
     const white = document.getElementById('color-white');
     const black = document.getElementById('color-black');
@@ -69,17 +67,6 @@
         }
         // console.log(selected.val());
 
-    });
-
-    //let database = firebase.initializeApp(config).firestore();
-
-    var cardsRef = db.collection("cards").get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-
-            var card = doc.data();
-
-            console.log(card);
-        })
     });
 
     

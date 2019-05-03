@@ -8,3 +8,12 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+var database = firebase.firestore();
+
+var cardsRef = database.collection("cards").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+
+        return doc.data();
+    })
+});
