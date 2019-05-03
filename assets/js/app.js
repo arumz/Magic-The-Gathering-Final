@@ -27,20 +27,63 @@
     const mana9 = document.getElementById('mana-9');
     const mana10 = document.getElementById('mana-10');
 
-    white.addEventListener('change', e=>{
-        console.log(e);
-    })
-  
-    const mana1 = document.getElementById('mana1');
-    const mana2 = document.getElementById('mana2');
-    const mana3 = document.getElementById('mana3');
-    const mana4 = document.getElementById('mana4');
-    const mana5 = document.getElementById('mana5');
-    const mana6 = document.getElementById('mana6');
-    const mana7 = document.getElementById('mana7');
-    const mana8 = document.getElementById('mana8');
-    const mana9 = document.getElementById('mana9');
-    const mana10 = document.getElementById('mana10');
+
+    var manaFilters = [];
+    var typeFilters = [];
+    var colorFilters = [];
+
+
+
+    $('.mana').click(function(){
+
+        var selected = $(".mana:checked");
+        if (selected) {
+            manaFilters = [];
+            manaFilters.push(selected.val());
+            // console.log(manaFilters);
+        }
+        // var cost = selected.val();
+        // console.log(selected.val());
+        // return cost;
+    });
+
+    $('.type').click(function(){
+
+        var selected = $(".type:checked");
+        if (selected) {
+            typeFilters = [];
+            typeFilters.push(selected.val());
+            // console.log(typeFilters);
+        }
+        // console.log(selected.val());
+
+    });
+
+    $('.color').click(function(){
+
+        var selected = $(".color:checked");
+        if (selected) {
+            colorFilters = [];
+            colorFilters.push(selected.val());
+            // console.log(colorFilters);
+        }
+        // console.log(selected.val());
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     const btnSubmit = document.getElementById('btnSubmit');
@@ -76,10 +119,17 @@
                 var user = result.user;
 
                 if (user){
-                    // checkBoxChanged() {
 
-                    //if (checked) {
-                    // add it to query
+                    var mana = manaFilters[0];
+                    var color = colorFilters[0];
+                    var type = typeFilters[0];
+
+                    console.log(manaFilters[0]);
+                    console.log(colorFilters[0]);
+                    console.log(typeFilters[0]);
+
+
+
 
                 }
 
