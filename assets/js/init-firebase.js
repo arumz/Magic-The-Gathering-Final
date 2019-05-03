@@ -14,6 +14,9 @@ var database = firebase.firestore();
 var cardsRef = database.collection("cards").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
 
+
+        console.log(doc.data()["name"]);
+
         return doc.data();
     })
 });

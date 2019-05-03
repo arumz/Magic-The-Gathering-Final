@@ -1,5 +1,7 @@
 (function() {
-    // get elements
+
+// get elements
+
 
     const white = document.getElementById('color-white');
     const black = document.getElementById('color-black');
